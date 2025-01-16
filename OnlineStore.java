@@ -34,6 +34,8 @@ public class OnlineStore {
         if (confirmOrderCustomer1) {
             System.out.println(customer1 + confirmationMessage);
             System.out.println(showTotalMessage + pantsPrice);
+        } else{
+            System.out.println(rejectedMessage);
         }
         System.out.println(borderInner);
         System.out.println(border);
@@ -46,7 +48,9 @@ public class OnlineStore {
         System.out.println(welcomeMessage + customer2);
         if (confirmOrderCustomer2) {
             System.out.println(customer2 + confirmationMessage);
-            System.out.println(showTotalMessage + (tShirtPrice + shoesPrice + pantsPrice));
+            System.out.println(showTotalMessage + (tShirtPrice + (shoesPrice*2) + pantsPrice));
+        } else{
+            System.out.println(rejectedMessage);
         }
         System.out.println(borderInner);
         System.out.println(border);
@@ -59,6 +63,9 @@ public class OnlineStore {
         if (confirmOrderCustomer3) {
             System.out.println(customer3 + confirmationMessage);
             System.out.println(showTotalMessage + (tShirtPrice + pantsPrice));
+        }
+        else{
+            System.out.println(rejectedMessage);
         }
         System.out.println(borderInner);
         System.out.println(border);
